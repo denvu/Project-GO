@@ -1,0 +1,33 @@
+
+.popular__questions {
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.popular__questions:nth-of-type(even) {
+    color: #fff;
+    background-color: #440F51;
+}
+
+.popular__questions:nth-of-type(even):after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(img/open.svg);
+    background-size: contain;
+    float: right;
+}
+
+.popular__questions:nth-of-type(odd):after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(img/open-purple.svg);
+    background-size: contain;
+    float: right;
+}
