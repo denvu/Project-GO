@@ -1,0 +1,54 @@
+.contacts__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.contacts__wrapper {
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.contacts__address, .contacts__phone, .contacts__mail {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.contacts__icon__phone, .contacts__icon__mail {
+    margin-right: 30px;
+}
+
+.contacts__social {
+    display: flex;
+    gap: 37px;
+    list-style: none;
+	padding: 0;
+}
+
+.social__link {
+    display: block;
+    background-repeat: no-repeat;
+    width: 50px;
+	height: 50px;
+    margin-top: 36px;
+    border-radius: 50%;
+}
+
+.social__vk {
+    background-image: url(img/icon/vk.svg);
+}
+
+.social__tg {
+    background-image: url(img/icon/tg.svg);
+}
+
+.social__pinterest {
+    background-image: url(img/icon/pinterest.svg);
+}
+
+.social__stumbleupon {
+    background-image: url(img/icon/stumbleupon.svg);
+}

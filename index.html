@@ -7,18 +7,27 @@
 
     <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
     <link rel="icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <header>
-        <div>
-          <img src="img/logo.png" alt="Логотип GO" width="120" id="logo">
-        </div>
-      </header>
+      <header></header>
 
       <main>
+        <section class="game-over">
+          <div class="content__wrapper">
+            <h1 class="game-over__title">GAME OVER</h1>
+            <p class="game-over__text">Новый формат игр и отдыха</p>
+          </div>
+
+          <img
+            class="game-over__img"
+            src="img/HeadGO.png"
+            alt="Парень в VR очках"
+          />
+        </section>
+
         <nav>
           <h2>Меню</h2>
           <ul>
@@ -75,14 +84,30 @@
           </ul>
         </section>
 
-        <section id="halls">
-          <h2>Наши залы</h2>
-          <ol>
-            <li><a href="/vibes.html">80's vibes</a></li>
-            <li><a href="/starwars.html">Star wars</a></li>
-            <li><a href="/wildwest.html">Wild west</a></li>
-            <li><a href="/neon.html">Neon style</a></li>
-          </ol>
+        <section class="halls" id="halls">
+          <h2 class="halls__title">Наши залы</h2>
+          <ul class="halls__list">
+            <li class="hall__name">
+              <a class="hall__link hall__80vibes" href="/vibes.html"
+                ><h3 class="halls__title__link">80's vibes</h3></a
+              >
+            </li>
+            <li class="hall__name">
+              <a class="hall__link hall__starwars" href="/starwars.html"
+                ><h3 class="halls__title__link">Star wars</h3></a
+              >
+            </li>
+            <li class="hall__name">
+              <a class="hall__link hall__west" href="/wildwest.html"
+                ><h3 class="halls__title__link">Wild west</h3></a
+              >
+            </li>
+            <li class="hall__name">
+              <a class="hall__link hall__neon" href="/neon.html"
+                ><h3 class="halls__title__link">Neon style</h3></a
+              >
+            </li>
+          </ul>
         </section>
 
         <section id="reserv">
@@ -268,29 +293,42 @@
           </form>
         </section>
 
-        <section id="about_us">
-          <h2>О нас</h2>
-          <p>
-            Для наших гостей мы создали
-            <i
-              >концептуально новое игровое пространство виртуальной
-              реальности</i
-            >
-            в центральной части города.
-          </p>
-          <p>
-            Каждый день мы стараемся создавать для вас самую лучшую игровую
-            атмосферу и радовать Вас топовыми игровыми разработками со всего
-            мира.
-          </p>
-          <blockquote>
-            <p class="quote">
-              <b>GAME OVER</b> - это место незабываемых впечатлений
-            </p>
-            <cite>
-              Аркадий Абакшин, создатель игровой территории GAME OVER
-            </cite>
-          </blockquote>
+        <section class="about_us" id="about_us">
+          <div class="about__wrapper">
+            <h2 class="about__wrapper__title">О нас</h2>
+            <div class="about__wrapper__text">
+              <p>
+                Для наших гостей мы создали концептуально новое игровое
+                пространство виртуальной реальности в центральной части города.
+              </p>
+              <p>
+                Каждый день мы стараемся создавать для вас самую лучшую игровую
+                атмосферу и радовать Вас топовыми игровыми разработками со всего
+                мира.
+              </p>
+            </div>
+
+            <div class="citate">
+              <blockquote>
+                <p class="citate__text">
+                  <span class="citate__quotes">&#10077;</span>
+                  GAME OVER - <br />
+                  это место незабываемых впечатлений
+                  <span class="citate__quotes">&#10078;</span>
+                </p>
+              </blockquote>
+            </div>
+
+            <div class="creator">
+              <div class="creator__wrapper">
+                <div class="creator__photo"></div>
+                <cite class="creator__text">
+                  Аркадий Абакшин,<br />создатель игровой<br />территории GAME
+                  OVER
+                </cite>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="reviews">
@@ -337,28 +375,59 @@
           <h2>Частые вопросы</h2>
 
           <div>
-            <p class="popular__questions">Можно ли забронировать комнату онлайн?</p>
-            <p class="popular__questions">Могут ли мне вернуть деньги за бронь?</p>
+            <p class="popular__questions">
+              Можно ли забронировать комнату онлайн?
+            </p>
+            <p class="popular__questions">
+              Могут ли мне вернуть деньги за бронь?
+            </p>
             <p class="popular__questions">Какая комната самая популярная?</p>
             <p class="popular__questions">Как получить VIP карту?</p>
             <p class="popular__questions">Какая комната самая популярная?</p>
           </div>
-
-
         </section>
 
         <address id="contacts">
-          <p>Контакты</p>
-          <p>г. Москва ул. Аквамарина. 16</p>
-          <p><a href="tel:+79509302893">8(950)930-28-93</a></p>
-          <p><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
-          <ul>
-            <li><a href="https://vk.com/">Vkontakte</a></li>
-            <li><a href="">Telegram</a></li>
-          </ul>
+          <h2 class="contacts__title">Контакты</h2>
+
+          <div class="contacts__wrapper">
+            <div class="contacts__address">
+              <img src="img/icon/location.svg" alt="Значок локации" />
+              <p>
+                г. Москва <br />
+                ул. Аквамарина. 16
+              </p>
+            </div>
+
+            <div class="contacts__service">
+              <p>
+                <img
+                  class="contacts__icon__phone"
+                  src="img/icon/phone.svg"
+                  alt="Значок телефона"
+                />
+                <a href="tel:+79509302893">8(950)930-28-93</a>
+              </p>
+              <p>
+                <img
+                  class="contacts__icon__mail"
+                  src="img/icon/mail.svg"
+                  alt="Значок письма"
+                />
+                <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+              </p>
+            </div>
+            <ul class="contacts__social">
+              <li><a class="social__link social__vk" href="https://vk.com/"></a></li>
+              <li><a class="social__link social__tg" href="#"></a></li>
+              <li><a class="social__link social__pinterest" href="#"></a></li>
+              <li><a class="social__link social__stumbleupon" href="#"></a></li>
+            </ul>
+          </div>
         </address>
       </main>
-    </div>
 
+      <footer></footer>
+    </div>
   </body>
 </html>

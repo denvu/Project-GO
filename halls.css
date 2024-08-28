@@ -1,0 +1,56 @@
+.halls {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.halls__list {
+    display: grid;
+}
+
+.hall__name {
+    width: auto;
+    height: 710px;
+	margin-top: 60px;
+    list-style-type: none;
+	
+}
+
+.hall__link {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.halls__title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.halls__title__link {
+    font-weight: 700;
+    font-size: 70px;
+    max-width: 252px;
+    text-transform: uppercase;
+}
+
+.hall__80vibes {
+    background-image: url(img/80.jpg);
+}
+
+.hall__starwars {
+    background-image: url(img/StarWars.jpg);
+}
+
+.hall__west {
+    background-image: url(img/WildWest.jpg);
+}
+
+.hall__neon {
+    background-image: url(img/Neon.jpg);
+}
+    
