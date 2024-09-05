@@ -6,6 +6,9 @@
 body {
   background-color: #1b1a1b;
   color: #ffffff;
+}
+
+.container__main {
   margin: 146px 130px;
 }
 
@@ -58,4 +61,12 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: uppercase;
 }
