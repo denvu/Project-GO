@@ -1,69 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
-  box-sizing: content-box;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  position: relative;
 }
 
 body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
   background-color: #1b1a1b;
   color: #ffffff;
 }
 
-.container__main {
-  margin: 146px 130px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.game-over {
-  min-height: 823px;
-	position: relative;
+button {
+  cursor: pointer;
 }
 
-.header__container {
-  position: relative;
-}
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+  }
 
-.game-over__img {
-  position: absolute;
-	display: block;
-	width: 675px;
-	height: 762px;
-	bottom: 0;
-	right: 0;
-  z-index: 1;
-}
-
-
-.content__wrapper {
-  position: relative;
-  z-index: 2;
-}
-
-.game-over__title {
-	font-size: 150px;
-	font-weight: 900;
-  margin: 0;
-	letter-spacing: -15px;
-	line-height: 100%;
-	text-shadow: 0px 0px 3px #111;
-}
-
-.game-over__text {
-	font-size: 28px;
-	line-height: 50px;
-  margin: 0;
-	padding-left: 100px;
-	margin-bottom: 30px;
-}
-
-.wrapper {
-  width: auto;
-}
+  section {
+    padding: 100px;
+  }
 
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}
+
 h2 {
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 40px;

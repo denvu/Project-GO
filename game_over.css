@@ -1,0 +1,37 @@
+.game-over {
+    min-height: 823px;
+      position: relative;
+  }
+  
+  .game-over__img {
+    position: absolute;
+      display: block;
+      width: 675px;
+      height: 762px;
+      bottom: 0;
+      right: 0;
+    z-index: 1;
+  }
+  
+  
+  .content__wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .game-over__title {
+      font-size: 150px;
+      font-weight: 900;
+    margin: 0;
+      letter-spacing: -15px;
+      line-height: 100%;
+      text-shadow: 0px 0px 3px #111;
+  }
+  
+  .game-over__text {
+      font-size: 28px;
+      line-height: 50px;
+    margin: 0;
+      padding-left: 100px;
+      margin-bottom: 30px;
+  }
