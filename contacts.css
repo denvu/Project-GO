@@ -1,5 +1,5 @@
 
-.contacts__wrapper {
+.contacts {
   font-weight: 700;
   font-size: 24px;
   font-style: normal;
@@ -11,7 +11,7 @@
     margin-bottom: 50px;
 }
 
-.contacts__icon {
+.contacts__svg {
     margin-right: 30px;
 }
 
@@ -22,7 +22,7 @@
 	padding: 0;
 }
 
-.social__link {
+.contacts__link {
     display: block;
     background-repeat: no-repeat;
     width: 50px;

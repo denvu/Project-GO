@@ -8,7 +8,7 @@
     display: grid;
 }
 
-.hall__name {
+.halls__name {
     width: auto;
     height: 710px;
 	margin-top: 60px;
@@ -16,7 +16,7 @@
 	
 }
 
-.hall__link {
+.halls__link {
     display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,19 +38,19 @@
     text-transform: uppercase;
 }
 
-.hall__80vibes {
+.halls__80vibes {
     background-image: url(img/80.jpg);
 }
 
-.hall__starwars {
+.halls__starwars {
     background-image: url(img/StarWars.jpg);
 }
 
-.hall__west {
+.halls__west {
     background-image: url(img/WildWest.jpg);
 }
 
-.hall__neon {
+.halls__neon {
     background-image: url(img/Neon.jpg);
 }
     

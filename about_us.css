@@ -1,35 +1,35 @@
-.about__wrapper__title {
+.about-us__title {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.about__wrapper__text {
+.about-us__text {
   font-weight: 400;
   font-size: 20px;
 }
 
-.citate {
+.about-us__citate {
   margin-bottom: 55px;
 }
 
-.citate__text {
+.about-us__citate-text {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 44px;
 }
 
-.citate__quotes {
+.about-us__citate-quotes {
   color: #6c0287;
 }
 
-.creator {
+.about-us__creator {
   display: flex;
   justify-content: flex-end;
 }
 
-.creator__wrapper {
+.about-us__creator-wrapper {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -37,13 +37,13 @@
   height: 84px;
 }
 
-.creator__text {
+.about-us__creator-text {
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
 }
 
-.creator__photo {
+.about-us__creator-photo {
   display: block;
   background-image: url(img/Arkady.jpg);
   background-repeat: no-repeat;

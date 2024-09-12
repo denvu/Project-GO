@@ -14,7 +14,7 @@
   }
   
   
-  .content__wrapper {
+  .game-over__content {
     position: relative;
     z-index: 2;
   }
