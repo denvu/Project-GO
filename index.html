@@ -15,19 +15,23 @@
       <section class="game-over">
         <div class="container">
           <div class="game-over__content">
-            <h1 class="game-over__title">GAME OVER</h1>
-            <p class="game-over__text">Новый формат игр и отдыха</p>
-          </div>
+            <div class="game-over__heading">
+              <h1 class="game-over__title">GAME OVER</h1>
+              <p class="game-over__text">Новый формат игр и отдыха</p>
+            </div>
 
-          <img
-            class="game-over__img"
-            src="img/HeadGO.png"
-            alt="Парень в VR очках"
-          />
+            <div class="game-over__banner">
+              <img
+                class="game-over__img"
+                src="img/HeadGO.png"
+                alt="Парень в VR очках"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <!-- <section>
         <div class="container">
           <h2>У нас есть всё для классного отдыха с друзьями!</h2>
           <ul>
@@ -71,7 +75,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <section class="halls" id="halls">
         <div class="container">
@@ -107,219 +111,229 @@
             action="https://jsonplaceholder.typicode.com/posts"
             method="post"
           >
+            <h2>Забронировать</h2>
+
             <fieldset>
-              <h2>Забронировать</h2>
-
-              <fieldset>
-                <label for="first_hall">
-                  <input
-                    type="radio"
-                    name="hall_name"
-                    id="first_hall"
-                    value="80vibes"
-                  />80's vibes
-                </label>
-                <label for="second_hall">
-                  <input
-                    type="radio"
-                    name="hall_name"
-                    id="second_hall"
-                    value="starwars"
-                  />Star wars
-                </label>
-                <label for="third_hall">
-                  <input
-                    type="radio"
-                    name="hall_name"
-                    id="third_hall"
-                    value="west"
-                  />Wild west
-                </label>
-                <label for="fourth_hall">
-                  <input
-                    type="radio"
-                    name="hall_name"
-                    id="fourth_hall"
-                    value="neon"
-                  />Neon style
-                </label>
-              </fieldset>
-
-              <fieldset>
-                <legend>Собери набор развлечений</legend>
-
-                <fieldset>
-                  <legend>Приставка:</legend>
-
-                  <label for="first_console">
-                    <input
-                      type="radio"
-                      name="console"
-                      id="first_console"
-                      value="PlayStation"
-                    />PlayStation
-                  </label>
-                  <label for="second_console">
-                    <input
-                      type="radio"
-                      name="console"
-                      id="second_console"
-                      value="Sega"
-                    />Sega Mega Drive
-                  </label>
-                  <label for="third_console">
-                    <input
-                      type="radio"
-                      name="console"
-                      id="third_console"
-                      value="X-box"
-                    />X-box One S
-                  </label>
-                  <label for="fourth_console">
-                    <input
-                      type="radio"
-                      name="console"
-                      id="fourth_console"
-                      value="Dendy"
-                    />Dendy
-                  </label>
-                </fieldset>
-
-                <fieldset>
-                  <legend>Настольные игры</legend>
-
-                  <label for="first_game">
-                    <input
-                      type="checkbox"
-                      name="game"
-                      id="first_game"
-                      value="jenga"
-                    />Jenga
-                  </label>
-                  <label for="second_game">
-                    <input
-                      type="checkbox"
-                      name="game"
-                      id="second_game"
-                      value="monopoly"
-                    />Monopoly
-                  </label>
-                  <label for="third_game">
-                    <input
-                      type="checkbox"
-                      name="game"
-                      id="third_game"
-                      value="manchkin"
-                    />Манчкин
-                  </label>
-                  <label for="fourth_game">
-                    <input
-                      type="checkbox"
-                      name="game"
-                      id="fourth_game"
-                      value="alias"
-                    />Alias
-                  </label>
-                </fieldset>
-
-                <fieldset>
-                  <legend>Дополнительно</legend>
-
-                  <label for="karaoke">
-                    <input type="checkbox" name="karaoke" id="karaoke" />Караоке
-                  </label>
-                  <label for="vr">
-                    <input type="checkbox" name="vr" id="vr" />VR
-                  </label>
-                </fieldset>
-              </fieldset>
-
-              <fieldset>
-                <legend>Выбери дату и время</legend>
-
-                <label for="date"
-                  >Дата*
-                  <input type="date" name="date" id="date" required />
-                </label>
-                <label for="time"
-                  >Время*
-                  <input type="time" name="time" id="time" required />
-                </label>
-                <br />
-                <label for="person"
-                  >Количество человек*
-                  <input type="number" name="person" id="person" required />
-                </label>
-                <br />
-                <label for="name"
-                  >Имя*
-                  <input type="text" name="name" id="name" required />
-                </label>
-                <br />
-                <label for="surname"
-                  >Фамилия*
-                  <input type="text" name="surname" id="surname" required />
-                </label>
-                <br />
-                <label for="phone_number"
-                  >Номер телефона*
-                  <input
-                    type="tel"
-                    name="phone_number"
-                    id="phone_number"
-                    required
-                  />
-                </label>
-                <br />
-                <label for="age">
-                  <input type="checkbox" id="age" />Я старше 18 лет
-                </label>
-              </fieldset>
-
-              <button>Забронировать</button>
-              <label for="processing">
-                <input type="checkbox" id="processing" required />Согласен на
-                обработку данных
+              <label for="first_hall">
+                <input
+                  type="radio"
+                  name="hall_name"
+                  id="first_hall"
+                  value="80vibes"
+                />80's vibes
+              </label>
+              <label for="second_hall">
+                <input
+                  type="radio"
+                  name="hall_name"
+                  id="second_hall"
+                  value="starwars"
+                />Star wars
+              </label>
+              <label for="third_hall">
+                <input
+                  type="radio"
+                  name="hall_name"
+                  id="third_hall"
+                  value="west"
+                />Wild west
+              </label>
+              <label for="fourth_hall">
+                <input
+                  type="radio"
+                  name="hall_name"
+                  id="fourth_hall"
+                  value="neon"
+                />Neon style
               </label>
             </fieldset>
+
+            <fieldset>
+              <legend>Собери набор развлечений</legend>
+
+              <fieldset>
+                <legend>Приставка:</legend>
+
+                <label for="first_console">
+                  <input
+                    type="radio"
+                    name="console"
+                    id="first_console"
+                    value="PlayStation"
+                  />PlayStation
+                </label>
+                <label for="second_console">
+                  <input
+                    type="radio"
+                    name="console"
+                    id="second_console"
+                    value="Sega"
+                  />Sega Mega Drive
+                </label>
+                <label for="third_console">
+                  <input
+                    type="radio"
+                    name="console"
+                    id="third_console"
+                    value="X-box"
+                  />X-box One S
+                </label>
+                <label for="fourth_console">
+                  <input
+                    type="radio"
+                    name="console"
+                    id="fourth_console"
+                    value="Dendy"
+                  />Dendy
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Настольные игры</legend>
+
+                <label for="first_game">
+                  <input
+                    type="checkbox"
+                    name="game"
+                    id="first_game"
+                    value="jenga"
+                  />Jenga
+                </label>
+                <label for="second_game">
+                  <input
+                    type="checkbox"
+                    name="game"
+                    id="second_game"
+                    value="monopoly"
+                  />Monopoly
+                </label>
+                <label for="third_game">
+                  <input
+                    type="checkbox"
+                    name="game"
+                    id="third_game"
+                    value="manchkin"
+                  />Манчкин
+                </label>
+                <label for="fourth_game">
+                  <input
+                    type="checkbox"
+                    name="game"
+                    id="fourth_game"
+                    value="alias"
+                  />Alias
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Дополнительно</legend>
+
+                <label for="karaoke">
+                  <input type="checkbox" name="karaoke" id="karaoke" />Караоке
+                </label>
+                <label for="vr">
+                  <input type="checkbox" name="vr" id="vr" />VR
+                </label>
+              </fieldset>
+            </fieldset>
+
+            <fieldset>
+              <legend>Выбери дату и время</legend>
+
+              <label for="date"
+                >Дата*
+                <input type="date" name="date" id="date" required />
+              </label>
+              <label for="time"
+                >Время*
+                <input type="time" name="time" id="time" required />
+              </label>
+              <br />
+              <label for="person"
+                >Количество человек*
+                <input type="number" name="person" id="person" required />
+              </label>
+              <br />
+              <label for="name"
+                >Имя*
+                <input type="text" name="name" id="name" required />
+              </label>
+              <br />
+              <label for="surname"
+                >Фамилия*
+                <input type="text" name="surname" id="surname" required />
+              </label>
+              <br />
+              <label for="phone_number"
+                >Номер телефона*
+                <input
+                  type="tel"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                />
+              </label>
+              <br />
+              <label for="age">
+                <input type="checkbox" id="age" />Я старше 18 лет
+              </label>
+            </fieldset>
+
+            <button>Забронировать</button>
+            <label for="processing">
+              <input type="checkbox" id="processing" required />Согласен на
+              обработку данных
+            </label>
           </form>
         </div>
       </section>
 
       <section class="about-us" id="about_us">
         <div class="container">
+          <h2 class="about-us__title">О нас</h2>
           <div class="about-us__wrapper">
-            <h2 class="about-us__title">О нас</h2>
-            <div class="about-us__text">
-              <p>
-                Для наших гостей мы создали концептуально новое игровое
-                пространство виртуальной реальности в центральной части города.
-              </p>
-              <p>
-                Каждый день мы стараемся создавать для вас самую лучшую игровую
-                атмосферу и радовать Вас топовыми игровыми разработками со всего
-                мира.
-              </p>
+            <div class="about-us__img">
+              <img
+                src="/img/about_us/banner.jpg"
+                alt="Набор картинок с развлечениями"
+              />
             </div>
 
-            <div class="about-us__citate">
-              <blockquote>
-                <p class="about-us__citate-text">
-                  <span class="about-us__citate-quotes">&#10077;</span>
-                  GAME OVER - <br />
-                  это место незабываемых впечатлений
-                  <span class="about-us__citate-quotes">&#10078;</span>
+            <div class="about-us__content">
+              <div class="about-us__text">
+                <p class="about-us__paragraph-one">
+                  Для наших гостей мы создали концептуально новое игровое
+                  пространство виртуальной реальности в центральной части
+                  города.
                 </p>
-              </blockquote>
-            </div>
+                <p class="about-us__paragraph-two">
+                  Каждый день мы стараемся создавать
+                  <br />
+                  для вас самую лучшую игровую атмосферу <br />и радовать Вас
+                  топовыми игровыми разработками <br />
+                  со всего мира.
+                </p>
+              </div>
 
-            <div class="about-us__creator">
-              <div class="about-us__creator-wrapper">
-                <div class="about-us__creator-photo"></div>
-                <cite class="about-us__creator-text">
-                  Аркадий Абакшин,<br />создатель игровой<br />территории GAME
-                  OVER
-                </cite>
+              <div class="about-us__citate">
+                <blockquote>
+                  <p class="about-us__citate-text">
+                    <span class="about-us__citate-quotes">&#10077;</span>
+                    GAME OVER - <br />
+                    это место незабываемых впечатлений
+                    <span class="about-us__citate-quotes">&#10078;</span>
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="about-us__creator">
+                <div class="about-us__creator-wrapper">
+                  <div class="about-us__creator-photo"></div>
+                  <cite class="about-us__creator-text">
+                    Аркадий Абакшин,<br />создатель игровой<br />территории GAME
+                    OVER
+                  </cite>
+                </div>
               </div>
             </div>
           </div>

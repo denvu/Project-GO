@@ -18,6 +18,11 @@ body {
   color: #ffffff;
 }
 
+main {
+  margin-top: 146px;
+  margin-bottom: 87px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -34,7 +39,7 @@ button {
   }
 
   section {
-    padding: 100px;
+    padding-bottom: 100px;
   }
 
 a {
@@ -59,4 +64,9 @@ h2 {
   font-size: 40px;
   font-style: normal;
   text-transform: uppercase;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
 }
