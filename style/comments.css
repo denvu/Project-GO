@@ -1,0 +1,24 @@
+.reviews__content {
+    display:flow-root;
+    position: relative;
+    font-size: 20px;
+}
+
+.reviews__photo {
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.reviews__last {
+    padding-bottom: 0;
+}
+
+.reviews__text {
+    padding-top: 52px;
+}
+
+.reviews__img {
+    padding-bottom: 11px;
+}
