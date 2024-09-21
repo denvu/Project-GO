@@ -44,18 +44,18 @@
 }
 
 .halls__80vibes {
-    background-image: url(/img/80.jpg);
+    background-image: url(../img/80.jpg);
 }
 
 .halls__starwars {
-    background-image: url(/img/StarWars.jpg);
+    background-image: url(../img/StarWars.jpg);
 }
 
 .halls__west {
-    background-image: url(/img/WildWest.jpg);
+    background-image: url(../img/WildWest.jpg);
 }
 
 .halls__neon {
-    background-image: url(/img/Neon.jpg);
+    background-image: url(../img/Neon.jpg);
 }
     

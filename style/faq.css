@@ -17,7 +17,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(/img/open.svg);
+    background-image: url(../img/open.svg);
     background-size: contain;
     float: right;
 }
@@ -26,7 +26,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url(/img/open-purple.svg);
+    background-image: url(../img/open-purple.svg);
     background-size: contain;
     float: right;
 }
