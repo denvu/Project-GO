@@ -2,6 +2,7 @@
   .game-over__content {
     min-width: 1180px;
     min-height: 823px;
+    position: relative;
   }
 
   .game-over__img {
@@ -75,4 +76,11 @@
     line-height: 50px;
     margin: 0;
     padding-left: 100px;
+  }
+
+  .game-over__round-btn {
+    position: absolute;
+    z-index: 3;
+    left: 46%;
+    top: 638px;
   }
