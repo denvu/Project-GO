@@ -1,5 +1,6 @@
 .contacts {
   font-weight: 700;
+  margin-bottom: 106px;
   font-size: 24px;
   font-style: normal;
 }
@@ -28,4 +29,23 @@
   height: 50px;
   margin-top: 36px;
   border-radius: 50%;
+}
+
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.designer__text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+footer div {
+  padding-bottom: 13px;
+}
+
+footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }

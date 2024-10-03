@@ -1,6 +1,3 @@
-  .game-over {
-    position: relative;
-  }
 
   .game-over__content {
     min-width: 1180px;
@@ -15,16 +12,53 @@
     z-index: 1;
   }
 
+  .game-over__text {
+    min-height: 669px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .game-over__text-info {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .game-over__text-four {
+    font-size: 100px;
+    font-weight: 900;
+    color: #CD06FF;
+  }
+
+  .game-over__text-new {
+    font-size: 75px;
+    font-weight: 900;
+    color: #CD06FF;
+    text-transform: uppercase;
+  }
+  
+
+  .game-over__btn {
+    max-width: 347px;
+    padding: 25px;
+    background-color: #6C0287;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 10px #6C0287)
+  }
+
   .game-over__banner {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     padding-top: 55px;
-  }
-
-  .game-over__heading {
-    position: absolute;
-    z-index: 2;
   }
 
   .game-over__title {
@@ -36,10 +70,9 @@
     text-shadow: 0px 0px 3px #111;
   }
 
-  .game-over__text {
+  .game-over__title-text {
     font-size: 28px;
     line-height: 50px;
     margin: 0;
     padding-left: 100px;
-    margin-bottom: 30px;
   }

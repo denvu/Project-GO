@@ -1,7 +1,10 @@
 @import url(main.css);
 @import url(faq.css);
+@import url(header.css);
+@import url(game_over.css);
+@import url(entertainment.css);
+@import url(reserv.css);
 @import url(halls.css);
 @import url(about_us.css);
 @import url(contacts.css);
-@import url(game_over.css);
 @import url(comments.css);

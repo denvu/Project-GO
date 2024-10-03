@@ -1,0 +1,155 @@
+.reserv {
+    background-color: #440F51;
+}
+
+fieldset {
+    padding: 0;
+    margin-bottom: 60px;
+    border: none;
+}
+
+fieldset:last-child {
+    margin-bottom: 0;
+}
+
+legend {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reserv__hall-input {
+    display: none;
+}
+
+.reserv__entertainment-input {
+    transform: scale(2);
+    margin-right: 8px;
+}
+
+.reserv__halls {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.reserv__hall {
+    padding: 14px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reserv__entertainment {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reserv__console, .reserv__game, .reserv__extra {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.reserv__console label:not(:last-child), .reserv__game label:not(:last-child), .reserv__extra label:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.reserv__information-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 50px;
+    margin-bottom: 40px;
+}
+
+.reserv__information-input {
+    width: 300px;
+    height: 52px;
+    padding-left: 20px;
+}
+
+.reserv__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserv__date-time {
+    display: flex;
+    column-gap: 32px;
+}
+
+.reserv__input-name {
+    width: 280px;
+}
+
+.reserv__label {
+    margin-bottom: 9px;
+}
+
+.reserv__input-date, .reserv__input-time, .reserv__input-person {
+    position: relative;
+}
+
+.reserv__input-date::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-image: url(/img/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 15px;
+    top: 48px;
+    right: 27px;
+}
+
+.reserv__input-time::after {
+    content: '';
+    background-image: url(/img/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 15px;
+    position: absolute;
+    top: 48px;
+    right: 27px;
+}
+
+.reserv__input-person::after {
+    content: '';
+    background-image: url(/img/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 15px;
+    position: absolute; 
+    top: 48px;
+    right: 27px;
+}
+
+.reserv__information-input_small {
+    width: 134px;
+
+}
+
+input::placeholder {
+    color: #211E1E;
+}
+
+.reserv__button {
+  padding-left: 780px;
+}
+
+.reserv__btn {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    color: #6C0287;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

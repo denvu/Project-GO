@@ -1,0 +1,18 @@
+.entertainment__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.entertainment__item {
+    position: relative;
+}
+
+.entertainment__text {
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    top: 170px;
+    left: 40px;
+}

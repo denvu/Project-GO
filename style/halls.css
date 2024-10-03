@@ -5,19 +5,14 @@
 }
 
 .halls__list {
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .halls__name {
-    display: inline-block;
     width: 580px ;
     height: 349px;
-    margin-bottom: 20px;
-    list-style-type: none;
-}
-
-.halls__name:not(:nth-child(2n)) {
-    margin-right: 15px;
 }
 
 .halls__link {
@@ -31,7 +26,6 @@
 }
 
 .halls__title {
-    padding-bottom: 60px;
     font-weight: 700;
     font-size: 40px;
 }

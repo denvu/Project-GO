@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    gap: 40px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.header__btn {
+    padding: 12px 32px;
+    background-color: #1b1a1b;
+    border: 3px solid #CD06FF;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
