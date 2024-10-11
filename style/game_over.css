@@ -5,6 +5,10 @@
     position: relative;
   }
 
+  .game-over {
+    padding-top: 0;
+  }
+
   .game-over__img {
     position: absolute;
     width: 675px;
