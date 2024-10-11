@@ -11,28 +11,40 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header">
-          <div class="header__logo">
-            <img src="img/logo.png" alt="" />
-          </div>
-          <nav class="header__navigation">
-            <ul class="header__menu">
-              <li><a href="#halls">залы</a></li>
-              <li><a href="#about_us">О нас</a></li>
-              <li><a href="#reserv">Бронь</a></li>
-              <li><a href="#reviews">отзывы</a></li>
-              <li><a href="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header__call">
-            <button class="header__btn header__btn-text">
-              Заказать звонок
-            </button>
+    <header class="header">
+      <section class="header__wrapper">
+        <div class="container">
+          <div class="header__grid">
+            <div class="header__logo">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <nav class="header__navigation">
+              <ul class="header__menu">
+                <li class="header__item">
+                  <a class="header__item-link" href="#halls">залы</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__item-link" href="#about_us">О нас</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__item-link" href="#reserv">Бронь</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__item-link" href="#reviews">отзывы</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__item-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__call">
+              <button class="header__btn header__btn-text">
+                Заказать звонок
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <main>
@@ -44,25 +56,27 @@
                 <h1 class="game-over__title">GAME OVER</h1>
                 <p class="game-over__title-text">Новый формат игр и отдыха</p>
               </div>
-              <div class="game-over__text-info">
-                <p>
-                  <span class="game-over__text-four">4</span> <br />Тематических
-                  <br />зала
-                </p>
-                <p>
-                  <span class="game-over__text-new">new</span> <br />Новейшая
-                  <br />аппаратура
-                </p>
+              <div class="game-over__ad">
+                <div class="game-over__ad-text">
+                  <span class="game-over__four game-over__ad-text-elem">4</span>
+                  <span class="game-over__ad-text-elem">Тематических</span>
+                  <span class="game-over__ad-text-elem">зала</span>
+                </div>
+                <div class="game-over__ad-text">
+                  <span class="game-over__new game-over__ad-text-elem"
+                    >new</span
+                  >
+                  <span class="game-over__ad-text-elem">Новейшая</span>
+                  <span class="game-over__ad-text-elem">аппаратура</span>
+                </div>
               </div>
               <button class="game-over__btn">Забронировать</button>
             </div>
-            <div class="game-over__banner">
-              <img
-                class="game-over__img"
-                src="img/HeadGO.png"
-                alt="Парень в VR очках"
-              />
-            </div>
+            <img
+              class="game-over__img"
+              src="img/HeadGO.png"
+              alt="Парень в VR очках"
+            />
             <div class="game-over__round-btn">
               <svg
                 width="97"
@@ -97,53 +111,77 @@
       <section class="entertainment">
         <div class="container">
           <h2 class="entertainment__title">
-            У нас есть всё для классного <br />
+            У нас есть всё для классного
+            <br />
             отдыха с друзьями!
           </h2>
           <div class="entertainment__content">
             <ul class="entertainment__list">
-              <li>
-                <figure class="entertainment__item">
-                  <img src="img/vr.jpg" alt="VR очки" />
+              <li class="entertainment__item">
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/vr.jpg"
+                    alt="VR очки"
+                  />
                   <figcaption class="entertainment__text">VR очки</figcaption>
                 </figure>
               </li>
-              <li>
-                <figure class="entertainment__item">
-                  <img src="img/audio.jpg" alt="Аудио-система" />
+              <li class="entertainment__item">
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/audio.jpg"
+                    alt="Аудио-система"
+                  />
                   <figcaption class="entertainment__text">
                     Аудио-система 5.1 с отличным звуком
                   </figcaption>
                 </figure>
               </li>
-              <li>
-                <figure class="entertainment__item">
-                  <img src="img/micro.jpg" alt="Караоке" />
+              <li class="entertainment__item">
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/micro.jpg"
+                    alt="Караоке"
+                  />
                   <figcaption class="entertainment__text">
                     Караоке (4 микрофона)
                   </figcaption>
                 </figure>
               </li>
-              <li>
-                <figure class="entertainment__item">
-                  <img src="img/game.jpg" alt="Настольные игры" />
+              <li class="entertainment__item">
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/game.jpg"
+                    alt="Настольные игры"
+                  />
                   <figcaption class="entertainment__text">
                     Настольные игры
                   </figcaption>
                 </figure>
               </li>
-              <li>
-                <figure class="entertainment__item">
-                  <img src="img/netflix.jpg" alt="Кино сервисы" />
+              <li class="entertainment__item">
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/netflix.jpg"
+                    alt="Кино сервисы"
+                  />
                   <figcaption class="entertainment__text">
-                    Кино сервисы Netflix, IVI, <br />
-                    MegoGo, КиноПоиск, Okko
+                    Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
                   </figcaption>
                 </figure>
               </li>
               <li class="entertainment__item">
-                <figure>
-                  <img src="img/sony.jpg" alt="PlayStation" />
+                <figure class="entertainment__picture">
+                  <img
+                    class="entertainment__img"
+                    src="img/sony.jpg"
+                    alt="PlayStation"
+                  />
                   <figcaption class="entertainment__text">
                     PlayStation 5
                   </figcaption>
@@ -185,13 +223,14 @@
       <section class="reserv" id="reserv">
         <div class="container">
           <form
+            class="reserv__form"
             action="https://jsonplaceholder.typicode.com/posts"
             method="post"
           >
-            <h2>Забронировать зал просто</h2>
+            <h2 class="reserv__title">Забронировать зал просто</h2>
 
             <fieldset class="reserv__halls">
-              <legend>Выбери зал</legend>
+              <legend class="reserv__subtitle">Выбери зал</legend>
               <label class="reserv__hall" for="first_hall">
                 <input
                   class="reserv__hall-input"
@@ -231,12 +270,12 @@
             </fieldset>
 
             <fieldset class="reserv__entertainment">
-              <legend>Собери набор развлечений</legend>
+              <legend class="reserv__subtitle">Собери набор развлечений</legend>
 
               <fieldset class="reserv__console">
-                <legend>Приставка:</legend>
+                <legend class="reserv__entertainment-desc">Приставка:</legend>
 
-                <label for="reserv__consol-ps">
+                <label class="reserv__console-desc" for="reserv__consol-ps">
                   <input
                     class="reserv__entertainment-input"
                     type="radio"
@@ -245,7 +284,7 @@
                     value="PlayStation"
                   />PlayStation
                 </label>
-                <label for="reserv__consol-sega">
+                <label class="reserv__console-desc" for="reserv__consol-sega">
                   <input
                     class="reserv__entertainment-input"
                     type="radio"
@@ -254,7 +293,7 @@
                     value="Sega"
                   />Sega Mega Drive
                 </label>
-                <label for="reserv__consol-xbox">
+                <label class="reserv__console-desc" for="reserv__consol-xbox">
                   <input
                     class="reserv__entertainment-input"
                     type="radio"
@@ -263,7 +302,7 @@
                     value="X-box"
                   />X-box One S
                 </label>
-                <label for="reserv__consol-dendy">
+                <label class="reserv__console-desc" for="reserv__consol-dendy">
                   <input
                     class="reserv__entertainment-input"
                     type="radio"
@@ -275,9 +314,11 @@
               </fieldset>
 
               <fieldset class="reserv__game">
-                <legend>Настольные игры</legend>
+                <legend class="reserv__entertainment-desc">
+                  Настольные игры
+                </legend>
 
-                <label for="reserv__game-jenga">
+                <label class="reserv__game-desc" for="reserv__game-jenga">
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -286,7 +327,7 @@
                     value="jenga"
                   />Jenga
                 </label>
-                <label for="reserv__game-monopoly">
+                <label class="reserv__game-desc" for="reserv__game-monopoly">
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -295,7 +336,7 @@
                     value="monopoly"
                   />Monopoly
                 </label>
-                <label for="reserv__game-manchkin">
+                <label class="reserv__game-desc" for="reserv__game-manchkin">
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -304,7 +345,7 @@
                     value="manchkin"
                   />Манчкин
                 </label>
-                <label for="reserv__game-alias">
+                <label class="reserv__game-desc" for="reserv__game-alias">
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -316,9 +357,15 @@
               </fieldset>
 
               <fieldset class="reserv__extra">
-                <legend>Дополнительно</legend>
+                <legend class="reserv__entertainment-desc">
+                  Дополнительно
+                </legend>
 
-                <label class="reserv__extra-karaoke" for="karaoke">
+                <label
+                  class="reserv__extra-desc"
+                  class="reserv__extra-karaoke"
+                  for="karaoke"
+                >
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -326,7 +373,11 @@
                     id="karaoke"
                   />Караоке
                 </label>
-                <label class="reserv__extra-vr" for="vr">
+                <label
+                  class="reserv__extra-desc"
+                  class="reserv__extra-vr"
+                  for="vr"
+                >
                   <input
                     class="reserv__entertainment-input"
                     type="checkbox"
@@ -338,13 +389,13 @@
             </fieldset>
 
             <fieldset class="reserv__information">
-              <legend>Выбери дату и время</legend>
+              <legend class="reserv__subtitle">Выбери дату и время</legend>
 
-              <div class="reserv__form">
-                <div class="reserv__information-form">
+              <div class="reserv__date">
+                <div class="reserv__date-form">
                   <div class="reserv__date-time">
                     <div class="reserv__input-date">
-                      <label class="reserv__label" for="date"><br /></label>
+                      <label class="reserv__label" for="date"></label>
                       <input
                         class="reserv__information-input reserv__information-input_small"
                         type="text"
@@ -356,7 +407,7 @@
                     </div>
 
                     <div class="reserv__input-time">
-                      <label class="reserv__label" for="time"><br /></label>
+                      <label class="reserv__label" for="time"></label>
                       <input
                         class="reserv__information-input reserv__information-input_small"
                         type="text"
@@ -393,7 +444,7 @@
                   </div>
 
                   <div class="reserv__input-person">
-                    <label class="reserv__label" for="person"><br /></label>
+                    <label class="reserv__label" for="person"></label>
                     <input
                       class="reserv__information-input"
                       type="text"
@@ -455,11 +506,9 @@
                   города.
                 </p>
                 <p class="about-us__paragraph-two">
-                  Каждый день мы стараемся создавать
-                  <br />
-                  для вас самую лучшую игровую атмосферу <br />и радовать Вас
-                  топовыми игровыми разработками <br />
-                  со всего мира.
+                  Каждый день мы стараемся создавать для вас самую лучшую
+                  игровую атмосферу и радовать Вас топовыми игровыми
+                  разработками со всего мира.
                 </p>
               </div>
 
@@ -490,7 +539,7 @@
 
       <section class="reviews" id="reviews">
         <div class="container">
-          <h2>ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
+          <h2 class="reviews__title">ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
 
           <div class="reviews__content">
             <figure class="reviews__photo">
@@ -499,15 +548,20 @@
                 src="img/clients_photos/maks.png"
                 alt="Макс"
               />
-              <figcaption>Макс Самойлов</figcaption>
+              <figcaption class="reviews__name">Макс Самойлов</figcaption>
             </figure>
-            <p class="reviews__text">
-              Отмечали здесь день рождения с компанией друзей, все было очень
-              <br />
-              круто! VR очки это просто бомба, никогда еще я не был в таком
-              полном <br />
-              игровом погружении. Сервис на высоте!
-            </p>
+            <div class="reviews__text">
+              <span class="reviews__text-elem">
+                Отмечали здесь день рождения с компанией друзей, все было очень
+              </span>
+              <span class="reviews__text-elem">
+                круто! VR очки это просто бомба, никогда еще я не был в таком
+                полном
+              </span>
+              <span class="reviews__text-elem">
+                игровом погружении. Сервис на высоте!
+              </span>
+            </div>
           </div>
 
           <div class="reviews__content">
@@ -517,14 +571,17 @@
                 src="img/clients_photos/oksana.png"
                 alt="Оксана"
               />
-              <figcaption>Оксана Григорьева</figcaption>
+              <figcaption class="reviews__name">Оксана Григорьева</figcaption>
             </figure>
-            <p class="reviews__text">
-              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
-              <br />
-              получился корпоратив! У нас в городе больше нет подобных
-              заведений.
-            </p>
+            <div class="reviews__text">
+              <span class="reviews__text-elem">
+                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
+              </span>
+              <span class="reviews__text-elem">
+                получился корпоратив! У нас в городе больше нет подобных
+                заведений.
+              </span>
+            </div>
           </div>
 
           <div class="reviews__content">
@@ -534,13 +591,17 @@
                 src="img/clients_photos/nikita.png"
                 alt="Никита"
               />
-              <figcaption>Никита Ященко</figcaption>
+              <figcaption class="reviews__name">Никита Ященко</figcaption>
             </figure>
-            <p class="reviews__text">
-              Немного подвисала игра в VR очках, а так все норм. Крутое <br />
-              оформление комнаты в стиле звездный войн, попал в атмосферу <br />
-              космоса.
-            </p>
+            <div class="reviews__text">
+              <span span class="reviews__text-elem">
+                Немного подвисала игра в VR очках, а так все норм. Крутое
+              </span>
+              <span span class="reviews__text-elem">
+                оформление комнаты в стиле звездный войн, попал в атмосферу
+              </span>
+              <span span class="reviews__text-elem"> космоса. </span>
+            </div>
           </div>
         </div>
       </section>
@@ -567,9 +628,9 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section class="footer">
-        <h2>Контакты</h2>
+    <footer class="footer">
+      <section class="footer__wrapper">
+        <h2 class="footer__title">Контакты</h2>
         <address class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__info">
@@ -595,13 +656,13 @@
                     </svg>
                   </div>
                   <div class="contacts__name">
-                    г. Москва <br />
-                    ул. Аквамарина, 16
+                    <div class="contacts__city">г. Москва</div>
+                    <div class="contacts__street">ул. Аквамарина, 16</div>
                   </div>
                 </div>
 
                 <div class="contacts__service">
-                  <p>
+                  <div class="contacts__tel">
                     <svg
                       class="contacts__svg"
                       width="35"
@@ -621,8 +682,8 @@
                     </svg>
 
                     <a href="tel:+79509302893">8(950)930-28-93</a>
-                  </p>
-                  <p>
+                  </div>
+                  <div class="contacts__email">
                     <svg
                       class="contacts__svg"
                       width="36"
@@ -642,7 +703,7 @@
                     </svg>
 
                     <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-                  </p>
+                  </div>
                 </div>
                 <ul class="contacts__social">
                   <li>
@@ -744,15 +805,18 @@
             </div>
           </div>
         </address>
-      </section>
-      <div class="designer">
-        <div class="container">
-          <div class="designer__text">
-            <p>© Game Over, 2022</p>
-            <p>Design by Anastasia Ilina <br />ilina9825@gmail.com</p>
+        <div class="designer">
+          <div class="container">
+            <div class="designer__wrapper">
+              <div class="designer__text">© Game Over, 2022</div>
+              <div class="designer__info">
+                <div class="designer__name">Design by Anastasia Ilina</div>
+                <div class="designer__email">ilina9825@gmail.com</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -6,6 +6,7 @@
   }
 
   .game-over__img {
+    position: absolute;
     width: 675px;
     height: 762px;
     bottom: 0;
@@ -21,7 +22,7 @@
     justify-content: space-between;
   }
 
-  .game-over__text-info {
+  .game-over__ad {
     display: flex;
     gap: 40px;
     align-items: end;
@@ -29,13 +30,18 @@
     text-align: center;
   }
 
-  .game-over__text-four {
+  .game-over__ad-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .game-over__four {
     font-size: 100px;
     font-weight: 900;
     color: #CD06FF;
   }
 
-  .game-over__text-new {
+  .game-over__new {
     font-size: 75px;
     font-weight: 900;
     color: #CD06FF;

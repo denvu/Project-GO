@@ -1,3 +1,7 @@
+footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
 .contacts {
   font-weight: 700;
   margin-bottom: 106px;
@@ -36,16 +40,14 @@
   justify-content: space-between;
 }
 
-.designer__text {
+.designer__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 14px;
 }
 
-footer div {
+.footer__wrapper {
   padding-bottom: 13px;
 }
 
-footer {
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
-}

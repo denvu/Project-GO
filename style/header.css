@@ -1,7 +1,8 @@
-.header {
+.header__grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
 }
 
 .header__menu {

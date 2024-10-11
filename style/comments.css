@@ -16,6 +16,8 @@
 }
 
 .reviews__text {
+    display: flex;
+    flex-direction: column;
     padding-top: 52px;
 }
 
