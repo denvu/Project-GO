@@ -22,3 +22,19 @@
     font-size: 22px;
     text-transform: uppercase;
 }
+
+.header__btn:hover {
+    background: #6C0287;
+    border-color: #6C0287;
+}
+
+.header__btn:focus {
+    background: #6C0287;
+    border-color: #6C0287;
+}
+
+.header__btn:active {
+    padding: 14px 34px;
+    background: #640AA3;
+    border: 1px solid #000000;
+}

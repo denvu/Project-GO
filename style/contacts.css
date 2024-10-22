@@ -35,6 +35,26 @@ footer {
   border-radius: 50%;
 }
 
+.contacts__link:hover svg path {
+  fill: #EADEED;
+}
+
+.contacts__link:focus svg path  {
+  fill: #EADEED;
+  border: 1px solid #CD06FF;
+}
+
+.contacts__link:focus {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #CD06FF;
+  border-radius: 0%;
+}
+
+.contacts__link:active svg path {
+  fill: #CD06FF;
+}
+
 .contacts__info {
   display: flex;
   justify-content: space-between;

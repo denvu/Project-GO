@@ -68,3 +68,18 @@ blockquote {
   margin: 0;
   padding: 0;
 }
+
+button:active, button:focus, input:active, input:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+input::-moz-focus-inner {
+  border: 0 !important;
+}
+
+fieldset {
+  border: none;
+}

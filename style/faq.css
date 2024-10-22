@@ -1,35 +1,79 @@
-.popular-questions__text {
-    background-color: #fff;
-    color: #1C1A1A;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 30px 70px;
-    justify-content: space-between;
+.popular-question__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #1c1a1a;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
 }
 
-.popular-questions__text:not(:last-child) {
-    margin-bottom: 20px;
+.popular-question__content:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.popular-questions__text:nth-of-type(even) {
-    color: #fff;
-    background-color: #440F51;
+.popular-question__content:nth-of-type(even) {
+  color: #fff;
+  background-color: #440f51;
 }
 
-.popular-questions__text:nth-of-type(even):after {
+.popular-questions____icon_white {
     content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/open.svg);
-    background-size: contain;
-    float: right;
+    background-image: url(/img/icon_faq/open.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
 }
 
-.popular-questions__text:nth-of-type(odd):after {
+.popular-questions____icon_white:hover {
     content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/open-purple.svg);
-    background-size: contain;
-    float: right;
+    background-image: url(/img/icon_faq/tab_white.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
+}
+
+.popular-questions____icon_white:active{
+    content: "";
+    background-image: url(/img/icon_faq/close_white.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
+}
+
+.popular-questions____icon_purple {
+    content: "";
+    background-image: url(/img/icon_faq/open-purple.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
+}
+
+.popular-questions____icon_purple:hover {
+    content: "";
+    background-image: url(/img/icon_faq/tab_purple.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
+}
+
+.popular-questions____icon_purple:active{
+    content: "";
+    background-image: url(/img/icon_faq/close_purple.svg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 46px;
+	height: 46px;
 }

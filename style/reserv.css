@@ -19,13 +19,30 @@ legend {
     text-align: center;
 }
 
+.reserv__console-desc, .reserv__game-desc, .reserv__extra-desc {
+    display: flex;
+    align-items: center;
+}
+
 .reserv__hall-input {
     display: none;
 }
 
 .reserv__entertainment-input {
-    transform: scale(2);
+    position: relative; 
+    width: 27px;
+    height: 27px;
     margin-right: 8px;
+}
+
+.reserv__entertainment-input:focus::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    border: 1px solid #CD06FF;
+    position: absolute;
+    top: -4px;
+    left: -4px; 
 }
 
 .reserv__halls {
@@ -37,11 +54,32 @@ legend {
 .reserv__hall {
     padding: 14px 30px;
     background-color: #fff;
+    border: 3px solid #fff;
     border-radius: 8px;
     color: #000;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+
+}
+
+.reserv__hall:hover {
+    background: #EADEED;
+    border: 3px solid #640AA3;
+    color: #000000;
+}
+
+
+.reserv__hall:focus{
+    background: #FFFFFF;
+    border: 3px solid #640AA3;
+    color: #000000;
+}
+
+.reserv__hall:active {
+    background: #6C0287;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .reserv__entertainment {
@@ -72,6 +110,10 @@ legend {
     width: 300px;
     height: 52px;
     padding-left: 20px;
+}
+
+.reserv__information-input:focus {
+    border: 2px solid #CD06FF;
 }
 
 .reserv__label {
@@ -146,15 +188,33 @@ input::placeholder {
   display: flex;
   justify-content: flex-end;
   max-width: 1080px;
+  z-index: 10;
 }
 
 .reserv__btn {
     position: relative;
-    width: 300px;
-    height: 60px;
+    width: 294px;
+    height: 54px;
+    background-color: #fff;
     color: #6C0287;
+    border: 3px solid #fff;
     border-radius: 10px;
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.reserv__btn:hover {
+    background: #EADEED;
+    border-color:#6C0287;
+}
+
+.reserv__btn:focus {
+    background: #FFFFFF;
+    border: 3px solid #6C0287;
+}
+
+.reserv__btn:active {
+    background: #EADEED;
+    border: 3px solid #EADEED;
 }
