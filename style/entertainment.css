@@ -6,6 +6,11 @@
 
 .entertainment__item {
     position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.entertainment__item:hover {
+    transform: scale(1.1);
 }
 
 .entertainment__text {

@@ -19,61 +19,65 @@
 }
 
 .popular-questions____icon_white {
-    content: "";
-    background-image: url(/img/icon_faq/open.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+  content: "";
+  background-image: url(/img/icon_faq/open.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
 }
 
 .popular-questions____icon_white:hover {
-    content: "";
-    background-image: url(/img/icon_faq/tab_white.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+  content: "";
+  background-image: url(/img/icon_faq/tab_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
+  transition-duration: 0.8s;
 }
 
-.popular-questions____icon_white:active{
-    content: "";
-    background-image: url(/img/icon_faq/close_white.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+.popular-questions____icon_white:active {
+  content: "";
+  background-image: url(/img/icon_faq/close_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
+  transition-duration: 0.2s;
 }
 
 .popular-questions____icon_purple {
-    content: "";
-    background-image: url(/img/icon_faq/open-purple.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+  content: "";
+  background-image: url(/img/icon_faq/open-purple.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
 }
 
 .popular-questions____icon_purple:hover {
-    content: "";
-    background-image: url(/img/icon_faq/tab_purple.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+  content: "";
+  background-image: url(/img/icon_faq/tab_purple.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
+  transition-duration: 0.8s;
 }
 
-.popular-questions____icon_purple:active{
-    content: "";
-    background-image: url(/img/icon_faq/close_purple.svg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 46px;
-	height: 46px;
+.popular-questions____icon_purple:active {
+  content: "";
+  background-image: url(/img/icon_faq/close_purple.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 46px;
+  height: 46px;
+  transition-duration: 0.2s;
 }

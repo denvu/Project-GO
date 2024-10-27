@@ -37,11 +37,13 @@ footer {
 
 .contacts__link:hover svg path {
   fill: #EADEED;
+  transition-duration: 0.8s;
 }
 
 .contacts__link:focus svg path  {
   fill: #EADEED;
   border: 1px solid #CD06FF;
+  transition-duration: 0.4s;
 }
 
 .contacts__link:focus {
@@ -49,10 +51,12 @@ footer {
   height: 50px;
   border: 1px solid #CD06FF;
   border-radius: 0%;
+  transition-duration: 0.4s;
 }
 
 .contacts__link:active svg path {
   fill: #CD06FF;
+  transition-duration: 0.2s;
 }
 
 .contacts__info {

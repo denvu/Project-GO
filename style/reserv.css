@@ -35,7 +35,7 @@ legend {
     margin-right: 8px;
 }
 
-.reserv__entertainment-input:focus::after {
+.reserv__entertainment-input:after {
     content: "";
     width: 33px;
     height: 33px;
@@ -43,6 +43,14 @@ legend {
     position: absolute;
     top: -4px;
     left: -4px; 
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.8s;
+}
+
+.reserv__entertainment-input:focus::after {
+    visibility: visible;
+    opacity: 1; 
 }
 
 .reserv__halls {
@@ -67,6 +75,7 @@ legend {
     background: #EADEED;
     border: 3px solid #640AA3;
     color: #000000;
+    transition-duration: 0.8s;
 }
 
 
@@ -74,12 +83,14 @@ legend {
     background: #FFFFFF;
     border: 3px solid #640AA3;
     color: #000000;
+    transition-duration: 0.4s;
 }
 
 .reserv__hall:active {
     background: #6C0287;
     border: 3px solid #FFFFFF;
     color: #FFFFFF;
+    transition-duration: 0.2s;
 }
 
 .reserv__entertainment {
@@ -114,6 +125,7 @@ legend {
 
 .reserv__information-input:focus {
     border: 2px solid #CD06FF;
+    transition-duration: 0.2s;
 }
 
 .reserv__label {
@@ -207,14 +219,17 @@ input::placeholder {
 .reserv__btn:hover {
     background: #EADEED;
     border-color:#6C0287;
+    transition-duration: 0.8s;
 }
 
 .reserv__btn:focus {
     background: #FFFFFF;
     border: 3px solid #6C0287;
+    transition-duration: 0.4s;
 }
 
 .reserv__btn:active {
     background: #EADEED;
     border: 3px solid #EADEED;
+    transition-duration: 0.2s;
 }

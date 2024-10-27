@@ -66,14 +66,17 @@
 
 .game-over__btn:hover {
   background: #840aa3;
+  transition-duration: 0.8s;
 }
 
 .game-over__btn:focus {
   background: #840aa3;
+  transition-duration: 0.4s;
 }
 
 .game-over__btn:active {
   background: #640aa3;
+  transition-duration: 0.2s;
 }
 
 .game-over__banner {
@@ -101,31 +104,56 @@
 .game-over__round-btn {
   position: absolute;
   z-index: 3;
-  left: 46%;
-  top: 638px;
+  left: 48%;
+  top: 640px;
   padding: 0;
-  height: 99px;
+  height: 97px;
+  width: 97px;
   background: transparent;
   border: none;
 }
 
-.game-over__round-btn:hover svg circle {
-  fill: #fff;
+.game-over__round-btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url('/img/btn-round_white.svg');
+  background-repeat: no-repeat;
+  transition: opacity 0.1s, visibility 0.4s;
 }
 
-.game-over__round-btn:hover svg rect {
-  fill: #6c0287;
+.game-over__round-btn:hover::before {
+  visibility: visible;
+  opacity: 1; 
 }
 
-.game-over__round-btn:focus {
-  border: 1px solid #CD06FF;
+.game-over__round-btn:focus::after {
+  content: "";
+    width: 97px;
+    height: 97px;
+    border: 1px solid #CD06FF;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    transition-duration: 0.2s;
 }
 
-.game-over__round-btn:active svg circle {
-  fill: #cd06ff;
-  stroke: #cd06ff;
+.game-over__round-btn:after {
+  content: "";
+  width: 97px;
+  height: 97px;
+  background-image: url(/img/btn-round_purp.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.4s;
 }
 
-.game-over__round-btn:active svg rect {
-  fill: #fff;
+.game-over__round-btn:active::after {
+  visibility: visible;
+  opacity: 1; 
 }

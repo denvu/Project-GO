@@ -26,15 +26,18 @@
 .header__btn:hover {
     background: #6C0287;
     border-color: #6C0287;
+    transition-duration: 0.4s;
 }
 
 .header__btn:focus {
     background: #6C0287;
     border-color: #6C0287;
+    transition-duration: 0.4s;
 }
 
 .header__btn:active {
     padding: 14px 34px;
     background: #640AA3;
     border: 1px solid #000000;
+    transition-duration: 0.2s;
 }
