@@ -39,7 +39,7 @@ legend {
     content: "";
     width: 33px;
     height: 33px;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--main-color-btn);
     position: absolute;
     top: -4px;
     left: -4px; 
@@ -61,9 +61,8 @@ legend {
 
 .reserv__hall {
     padding: 14px 30px;
-    background-color: #fff;
-    border: 3px solid #fff;
-    border-radius: 8px;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-white);
     color: #000;
     font-size: 30px;
     font-weight: 700;
@@ -87,7 +86,7 @@ legend {
 }
 
 .reserv__hall:active {
-    background: #6C0287;
+    background: var(--main-color-btn-dark);
     border: 3px solid #FFFFFF;
     color: #FFFFFF;
     transition-duration: 0.2s;
@@ -124,7 +123,7 @@ legend {
 }
 
 .reserv__information-input:focus {
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--main-color-btn);
     transition-duration: 0.2s;
 }
 
@@ -207,9 +206,9 @@ input::placeholder {
     position: relative;
     width: 294px;
     height: 54px;
-    background-color: #fff;
-    color: #6C0287;
-    border: 3px solid #fff;
+    background-color: var(--color-white);
+    color: var(--main-color-btn-dark);
+    border: 3px solid var(--color-white);
     border-radius: 10px;
     font-size: 22px;
     font-weight: 700;
@@ -218,13 +217,13 @@ input::placeholder {
 
 .reserv__btn:hover {
     background: #EADEED;
-    border-color:#6C0287;
+    border-color:var(--main-color-btn-dark);
     transition-duration: 0.8s;
 }
 
 .reserv__btn:focus {
     background: #FFFFFF;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--main-color-btn-dark);
     transition-duration: 0.4s;
 }
 

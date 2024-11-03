@@ -1,23 +1,69 @@
+.entertainment {
+    --card-count: 3;
+	--column-gap: 20px;
+	--row-gap: 40px;
+    padding: 50px 0 94.5px;
+}
+
 .entertainment__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 20px;
+	display: flex;
+	column-gap: var(--column-gap);
+	row-gap: var(--row-gap);
+	flex-wrap: wrap;
 }
 
 .entertainment__item {
-    position: relative;
-    transition: transform 0.3s ease-in-out;
+	flex-basis: calc(100% / var(--card-count) - (var(--column-gap) * (var(--card-count) - 1)/ var(--card-count)));
+	max-height: 228px;
+	height: 100%;
+	padding: 166px 40px 6px;
+	transition: transform, 0.2s;
+	line-height: 28px;
+	font-size: 20px;
+}
+
+.item-vr {
+	background: url('/img/vr.jpg');
+	background-repeat: no-repeat;
+}
+
+.item-audio {
+	background: url('../img/audio.jpg');
+	background-repeat: no-repeat;
+	transform: translateY(70px);
+}
+
+.item-micro {
+	background: url('../img/micro.jpg');
+	background-repeat: no-repeat;
+}
+
+.item-game {
+	background: url('../img/game.jpg');
+	background-repeat: no-repeat;
+}
+
+.item-netflix {
+	background: url('../img/netflix.jpg');
+	background-repeat: no-repeat;
+	transform: translateY(70px);
+}
+
+.item-sony {
+	background: url('../img/sony.jpg');
+	background-repeat: no-repeat;
 }
 
 .entertainment__item:hover {
-    transform: scale(1.1);
+	transform: scale(1.1, 1.1);
 }
 
-.entertainment__text {
-    position: absolute;
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    top: 170px;
-    left: 40px;
+.item-audio:hover,
+.item-netflix:hover {
+	transform: translateY(70px) scale(1.1 , 1.1);
+}
+
+.entertainment__link {
+	font-weight: 700;
+	line-height: 28px; 
 }

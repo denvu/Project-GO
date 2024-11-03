@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-white);
   color: #1c1a1a;
   font-weight: 700;
   font-size: 24px;
@@ -14,8 +14,8 @@
 }
 
 .popular-question__content:nth-of-type(even) {
-  color: #fff;
-  background-color: #440f51;
+  color: var(--color-white);
+  background-color: #440F51;
 }
 
 .popular-questions____icon_white {
@@ -26,6 +26,7 @@
   background-color: transparent;
   width: 46px;
   height: 46px;
+  
 }
 
 .popular-questions____icon_white:hover {

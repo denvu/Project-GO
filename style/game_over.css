@@ -41,27 +41,27 @@
 .game-over__four {
   font-size: 100px;
   font-weight: 900;
-  color: #cd06ff;
+  color: var(--main-color-btn);
 }
 
 .game-over__new {
   font-size: 75px;
   font-weight: 900;
-  color: #cd06ff;
+  color: var(--main-color-btn);
   text-transform: uppercase;
 }
 
 .game-over__btn {
   max-width: 347px;
   padding: 25px;
-  background-color: #6c0287;
+  background-color: var(--main-color-btn-dark);
   border-radius: 10px;
   border: none;
-  color: #fff;
+  color: var(--color-white);
   font-weight: 700;
   font-size: 26px;
   text-transform: uppercase;
-  filter: drop-shadow(0 0 10px #6c0287);
+  filter: drop-shadow(0 0 10px var(--main-color-btn-dark));
 }
 
 .game-over__btn:hover {
@@ -135,7 +135,7 @@
   content: "";
     width: 97px;
     height: 97px;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--main-color-btn);
     position: absolute;
     left: -1px;
     top: -1px;
