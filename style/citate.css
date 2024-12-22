@@ -1,0 +1,136 @@
+.citate {
+	display: inline-flex;
+	margin-bottom: 39px;
+	max-width: 444px;
+}
+
+.citate__autor {
+	max-width: 1125px;
+	display: inline-block;
+	margin: 0;
+	color: var(--color-white, #FFF);
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.citate__quotes {
+	color: var(--violet-color, #6C0287);
+	font-size: 44px;
+	font-weight: 900;
+	line-height: 50px; 
+	text-transform: uppercase;
+}
+
+.citate__quotes-close {
+	position: absolute;
+	bottom: 28px;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		font-size: 30px;
+		line-height: 36px;
+		max-width: 86%;
+	}
+
+	.citate__quotes {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.citate__quotes-close {
+		bottom: 18px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.citate {
+		min-width: 100%;
+		margin-bottom: 16px;
+	}
+
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		max-width: 100%;
+		font-size: 32px;
+		line-height: 36px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 321px) {
+	.citate {
+		position: relative;
+		max-width: 100%;
+		margin-bottom: 0;
+		padding-left: 12px;
+	}
+
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.citate__quotes {
+		font-size: 22px;
+		line-height: 50px;
+	}
+
+	.citate__quotes-open {
+		position: absolute;
+		top: -12px;
+		left: 0px;
+	}
+
+	.citate__quotes-close {
+		bottom: 5px;
+	}
+}
+
+@media (max-width: 320px) {
+	.citate {
+		position: relative;
+		min-width: 100%;
+		margin-bottom: 12px;
+		padding-left: 12px;
+	}
+
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.citate__quotes {
+		font-size: 22px;
+		line-height: 50px;
+	}
+
+	.citate__quotes-open {
+		position: absolute;
+		top: -12px;
+		left: 0px;
+	}
+
+	.citate__quotes-close {
+		bottom: 5px;
+	}
+}

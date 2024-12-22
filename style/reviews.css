@@ -1,0 +1,233 @@
+.reviews__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.reviews__inner {
+	display: flex;
+	gap: 20px;
+}
+
+.reviews__inner-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 11px;
+	border-radius: 50%;
+}
+
+.reviews__inner-img {
+	width: 280px;
+	height: 280px;
+	border-radius: 140px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reviews__inner-img_maks {
+	background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks.png);
+}
+
+.reviews__inner-img_oksana {
+	background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana.png);
+}
+
+.reviews__inner-img_nikita {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita.png);
+}
+
+.reviews__inner-name {
+	text-align: center;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.reviews__inner-text {
+	padding-top: 52px;
+	line-height: 28px; 
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.reviews {
+		padding: 31px 0 35px;
+	}
+
+	.reviews__wrapper {
+		max-width: 825px;
+	}
+
+	.reviews__inner {
+		gap: 38px;
+	}
+
+	.reviews__inner-img {
+		max-width: 172px;
+		max-height: 172px;
+		background-size: cover;
+	}
+
+	.reviews__inner-img_maks {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks1024.png);
+	}
+
+	.reviews__inner-img_oksana {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana1024.png);
+	}
+
+	.reviews__inner-img_nikita {
+			background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita1024.png);
+	}
+
+	.reviews__inner-name {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.reviews__inner-text {
+		font-size: 18px;
+		line-height: 26px;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.reviews {
+		padding: 32px 0 30px;
+	}
+
+	.reviews__wrapper {
+		max-width: 561px;
+	}
+
+	.reviews__inner {
+		gap: 15px;
+		align-items: center;
+	}
+
+	.reviews__inner-image {
+		gap: 17px;
+	}
+
+	.reviews__inner-img {
+		max-width: 153px;
+		max-height: 153px;
+	}
+
+		.reviews__inner-img_maks {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks768.png);
+	}
+
+	.reviews__inner-img_oksana {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana768.png);
+	}
+
+	.reviews__inner-img_nikita {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita768.png);
+	}
+
+	.reviews__inner-name {
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.reviews__inner-text {
+		padding-top: 0;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 321px) {
+	.reviews {
+		padding: 15px 0;
+	}
+
+	.reviews__wrapper {
+		max-width: 100%;
+		gap: 20px;
+	}
+
+	.reviews__inner {
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.reviews__inner-img {
+		max-width: 86px;
+		max-height: 86px;
+	}
+
+	.reviews__inner-img_maks {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks320.png);
+	}
+
+	.reviews__inner-img_oksana {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana320.png);
+	}
+
+	.reviews__inner-img_nikita {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita320.png);
+	}
+
+	.reviews__inner-name {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.reviews__inner-text {
+		font-size: 12px;
+		line-height: 16px;
+		padding: 0;
+	}
+}
+
+
+@media (max-width: 320px) {
+	.reviews {
+		padding: 15px 0;
+	}
+
+	.reviews__wrapper {
+		max-width: 280px;
+		gap: 20px;
+	}
+
+	.reviews__inner {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.reviews__inner-img {
+		max-width: 86px;
+		max-height: 86px;
+	}
+
+	.reviews__inner-img_maks {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks320.png);
+	}
+
+	.reviews__inner-img_oksana {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana320.png);
+	}
+
+	.reviews__inner-img_nikita {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita320.png);
+	}
+
+	.reviews__inner-name {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.reviews__inner-text {
+		font-size: 12px;
+		line-height: 16px;
+		padding: 0;
+	}
+}

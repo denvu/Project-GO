@@ -1,0 +1,286 @@
+.description {
+	--card-count: 3;
+	--column-gap: 20px;
+	--row-gap: 40px;
+	padding: 50px 0 94.5px;
+}
+
+.description__cards {
+	display: flex;
+	column-gap: var(--column-gap);
+	row-gap: var(--row-gap);
+	flex-wrap: wrap;
+}
+
+.description__card {
+	flex-basis: calc(100% / var(--card-count) - (var(--column-gap) * (var(--card-count) - 1)/ var(--card-count)));
+	max-height: 228px;
+	height: 100%;
+	padding: 166px 40px 6px;
+	transition: transform, 0.2s;
+	line-height: 28px;
+	font-size: 20px;
+}
+
+.description__card-vr {
+	background: url('../img/vr.png');
+	background-repeat: no-repeat;
+}
+
+.description__card-audio {
+	background: url('../img/audio.png');
+	background-repeat: no-repeat;
+	transform: translateY(70px);
+}
+
+.description__card-karaoke {
+	background: url('../img/karaoke.png');
+	background-repeat: no-repeat;
+}
+
+.description__card-games {
+	background: url('../img/board-games.png');
+	background-repeat: no-repeat;
+}
+
+.description__card-netflix {
+	background: url('../img/netflix.png');
+	background-repeat: no-repeat;
+	transform: translateY(70px);
+}
+
+.description__card-ps {
+	background: url('../img/ps5.png');
+	background-repeat: no-repeat;
+}
+
+.description__card:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.description__card-audio:hover,
+.description__card-netflix:hover {
+	transform: translateY(70px) scale(1.1 , 1.1);
+}
+
+.description__link {
+	font-weight: 700;
+	line-height: 28px; 
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.description {
+		padding: 41.5px 0 61px;
+	}
+
+	.description__card {
+		max-height: 172px;
+		background-repeat: no-repeat;
+		padding: 114px 20px 30px;
+	}
+
+	.description__card-vr {
+		background: url('../img/vr1024.png');
+	}
+
+	.description__card-audio {
+		background: url('../img/audio1024.png');
+		transform: translateY(53px);
+	}
+
+	.description__card-karaoke {
+		background: url('../img/karaoke1024.png');
+	}
+
+	.description__card-games {
+		background: url('../img/board-games1024.png');
+	}
+
+	.description__card-netflix {
+		background: url('../img/netflix1024.png');
+		transform: translateY(53px);
+		padding: 83px 20px 5px;
+	}
+
+	.description__card-ps {
+		background: url('../img/ps51024.png');
+	}
+
+	.description__card-audio:hover,
+	.description__card-netflix:hover {
+		transform: translateY(53px) scale(1.1 , 1.1);
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.description {
+		--card-count: 2;
+		--column-gap: 20px;
+		--row-gap: 20px;
+		padding: 40px 0 30px;
+	}
+
+	.description__card {
+		max-height: 200px;
+		padding: 132px 30px 40px 30px;
+	}
+
+	.description__card-vr {
+		background: url('../img/vr768.png');
+	}
+
+	.description__card-audio {
+		background: url('../img/audio768.png');
+		transform: translateY(0);
+	}
+
+	.description__card-karaoke {
+		background: url('../img/karaoke768.png');
+	}
+
+	.description__card-games {
+		background: url('../img/board-game768.png');
+	}
+
+	.description__card-netflix {
+		background: url('../img/netflix768.png');
+		transform: translateY(0);
+	}
+
+	.description__card-ps {
+		background: url('../img/ps5-768.png');
+		background-repeat: no-repeat;
+	}
+
+	.description__card:hover {
+		transform: scale(1, 1);
+	}
+
+	.description__card-audio:hover,
+	.description__card-netflix:hover {
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 767px) and (min-width: 321px) {
+	.description {
+		--card-count: 1;
+		--column-gap: 20px;
+		--row-gap: 20px;
+		padding: 40px 0 30px;
+	}
+
+	.description__card {
+		display: flex;
+		align-items: end;
+		min-height: 250px;
+		height: auto;
+		padding: 40px 20px 40px 20px;
+	}
+
+	.description__card-vr {
+		background: url('../img/vr768.png');
+		background-size: cover;
+	}
+
+	.description__card-audio {
+		background: url('../img/audio768.png');
+		transform: translateY(0);
+		background-size: cover;
+	}
+
+	.description__card-karaoke {
+		background: url('../img/karaoke768.png');
+		background-size: cover;
+	}
+
+	.description__card-games {
+		background: url('../img/board-game768.png');
+		background-size: cover;
+	}
+
+	.description__card-netflix {
+		background: url('../img/netflix768.png');
+		transform: translateY(0);
+		background-size: cover;
+	}
+
+	.description__card-ps {
+		background: url('../img/ps5-768.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.description__card:hover {
+		transform: scale(1, 1);
+		background-size: cover;
+	}
+
+	.description__card-audio:hover,
+	.description__card-netflix:hover {
+		transform: translateY(0);
+		background-size: cover;
+	}
+}
+
+@media (max-width: 320px) {
+		.description {
+		--card-count: 2;
+		--column-gap: 10px;
+		--row-gap: 10px;
+		padding: 43px 0 15px;
+	}
+
+	.description__card {
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		min-height: 75px;
+		background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.description__link {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+		.description__card-vr {
+		background: url('../img/vr320.png');
+	}
+
+	.description__card-audio {
+		background: url('../img/audio320.png');
+		transform: translateY(0);
+	}
+
+	.description__card-karaoke {
+		background: url('../img/karaoke320.png');
+	}
+
+	.description__card-games {
+		background: url('../img/board-games320.png');
+	}
+
+	.description__card-netflix {
+		background: url('../img/netflix320.png');
+		transform: translateY(0);
+		padding: 30px 10px 3px;
+	}
+
+	.description__card-ps {
+		background: url('../img/ps5-320.png');
+		background-repeat: no-repeat;
+	}
+
+	.description__card:hover {
+		transform: scale(1, 1);
+	}
+
+	.description__card-audio:hover,
+	.description__card-netflix:hover {
+		transform: translateY(0);
+	}
+}
