@@ -1,8 +1,0 @@
-.content {
-	display: flex;
-	flex-direction: column;
-}
-
-.halls__content {
-	gap: 60px;
-}

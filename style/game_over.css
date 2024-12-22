@@ -1,0 +1,159 @@
+.game-over__content {
+  min-width: 1180px;
+  min-height: 823px;
+  position: relative;
+}
+
+.game-over {
+  padding-top: 0;
+}
+
+.game-over__img {
+  position: absolute;
+  width: 675px;
+  height: 762px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.game-over__text {
+  min-height: 669px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-over__ad {
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  font-size: 30px;
+  text-align: center;
+}
+
+.game-over__ad-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-over__four {
+  font-size: 100px;
+  font-weight: 900;
+  color: var(--main-color-btn);
+}
+
+.game-over__new {
+  font-size: 75px;
+  font-weight: 900;
+  color: var(--main-color-btn);
+  text-transform: uppercase;
+}
+
+.game-over__btn {
+  max-width: 347px;
+  padding: 25px;
+  background-color: var(--main-color-btn-dark);
+  border-radius: 10px;
+  border: none;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 10px var(--main-color-btn-dark));
+}
+
+.game-over__btn:hover {
+  background: #840aa3;
+  transition-duration: 0.8s;
+}
+
+.game-over__btn:focus {
+  background: #840aa3;
+  transition-duration: 0.4s;
+}
+
+.game-over__btn:active {
+  background: #640aa3;
+  transition-duration: 0.2s;
+}
+
+.game-over__banner {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 55px;
+}
+
+.game-over__title {
+  font-size: 150px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -15px;
+  line-height: 100%;
+  text-shadow: 0px 0px 3px #111;
+}
+
+.game-over__title-text {
+  font-size: 28px;
+  line-height: 50px;
+  margin: 0;
+  padding-left: 100px;
+}
+
+.game-over__round-btn {
+  position: absolute;
+  z-index: 3;
+  left: 48%;
+  top: 640px;
+  padding: 0;
+  height: 97px;
+  width: 97px;
+  background: transparent;
+  border: none;
+}
+
+.game-over__round-btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url('/img/btn-round_white.svg');
+  background-repeat: no-repeat;
+  transition: opacity 0.1s, visibility 0.4s;
+}
+
+.game-over__round-btn:hover::before {
+  visibility: visible;
+  opacity: 1; 
+}
+
+.game-over__round-btn:focus::after {
+  content: "";
+    width: 97px;
+    height: 97px;
+    border: 1px solid var(--main-color-btn);
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    transition-duration: 0.2s;
+}
+
+.game-over__round-btn:after {
+  content: "";
+  width: 97px;
+  height: 97px;
+  background-image: url(/img/btn-round_purp.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.4s;
+}
+
+.game-over__round-btn:active::after {
+  visibility: visible;
+  opacity: 1; 
+}

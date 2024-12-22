@@ -1,0 +1,73 @@
+.about-us__wrapper {
+  display: flex;
+}
+
+.about-us__img {
+  min-width: 600px;
+  min-height: 596px;
+  margin-right: 80px;
+}
+
+.about-us__content {
+
+}
+
+.about-us__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about-us__paragraph-one {
+  margin-bottom: 42px;
+}
+
+.about-us__citate {
+  margin-bottom: 42px;
+}
+
+.about-us__citate-text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.about-us__citate-quotes {
+  color: #6C0287;
+}
+
+.about-us__creator {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-us__creator-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 389px;
+  height: 84px;
+}
+
+.about-us__creator-text {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.about-us__creator-photo {
+  display: block;
+  background-image: url(../img/about_us/Arkady.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}

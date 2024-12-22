@@ -1,172 +1,85 @@
 html {
-	position: relative;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
+* {
+  box-sizing: inherit;
 }
 
 body {
-	background-color: var(--dark, #1B1A1B);
-	color: var(--color-white, #FFF);
-	font-weight: 400;
-	font-style: normal;
-	min-width: 320px;
-	min-height: 100vh;
-	font-size: 20px;
-	font-family: Arial, sans-serif;
+  margin: 0;
+  
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: #1b1a1b;
+  color: #ffffff;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-}
-
-svg {
-	max-width: 100%;
-	height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-	padding: 0;
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-	transition-duration: 0.2s;
-	transition-property: all;
+  cursor: pointer;
 }
 
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+  }
+
+  section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
 a {
-	text-decoration: none;
-	color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-h1,
-h2,
-h3,
-p,
-figure,
-fieldset {
-	margin: 0;
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
 }
 
-iframe {
-	border: none;
+h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
-/*
-Доступно скрываю элементы
-*/
-
-.visually-hidden {
-	position: fixed;
-	transform: scale(0);
+blockquote {
+  margin: 0;
+  padding: 0;
 }
 
+button:active, button:focus, input:active, input:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
 
-/*
-Пример контейнера
-
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2, 
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
-
-.container {
-	max-width: 1440px;
-	padding: 0 130px;
-	margin: 0 auto;
+input::-moz-focus-inner {
+  border: 0 !important;
 }
 
 fieldset {
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-
-.section-page {
-	padding: 50px 0;
-}
-
-.page-title {
-	font-size: 30px;
-	line-height: 40px;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 36px;
-	text-transform: uppercase;
-}
-
-@media (max-width: 1439px) and (min-width: 1024px) {
-	.container {
-		max-width: 1024px;
-		padding: 0 60px;
-	}
-
-	.section-page {
-		padding: 35px 0;
-	}
-
-}
-
-@media (max-width: 1023px) and (min-width: 768px) {
-	.container {
-		max-width: 768px;
-		padding: 0 40px;
-	}
-
-	.section-page {
-		padding: 30px 0;
-	}
-
-	.page-title {
-		font-size: 24px;
-		line-height: 36px;
-		margin-bottom: 30px;
-	}
-}
-
-@media (max-width: 767px) and (min-width: 321px) {
-	.container {
-		max-width: 640px;
-		padding: 0 20px;
-	}
-	
-	.section-page {
-		padding: 15px 0;
-	}
-
-	.page-title {
-		font-size: 20px;
-		line-height: 36px;
-		margin-bottom: 30px;
-	}
-}
-
-@media (max-width: 320px) {
-	.container {
-		max-width: 320px;
-		padding: 0 20px;
-	}
-	
-	.section-page {
-		padding: 15px 0;
-	}
-
-	.page-title {
-		font-size: 14px;
-		line-height: 18px;
-		margin-bottom: 15px;
-	}
+  border: none;
 }
