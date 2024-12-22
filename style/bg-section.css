@@ -1,0 +1,100 @@
+.bg-section {
+	width: 100%;
+	height: 750px;
+	background-repeat: no-repeat;
+}
+
+.bg-section_vibes {
+	background: url('../img/vibes-bg1440.png'), lightgray 50%;
+	background-size: cover;
+}
+
+.bg-section_wars {
+	background: url('../img/page-wars.png'), lightgray 50%;
+	background-size: cover;
+}
+
+.bg-section_west {
+	background: url('../img/page-west.png'), lightgray 50%;
+	background-size: cover;;
+}
+
+.bg-section_neon {
+	background: url('../img/page-neon.png'), lightgray 50%;
+	background-size: cover;
+}
+
+.bg-section__wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 750px;
+}
+
+.bg-section__text {
+	font-size: 90px;
+	line-height: 80px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.bg-section {
+		min-width: 100%;
+		height: auto;
+	}
+	.bg-section__wrapper{
+		height: 534px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.bg-section {
+		width: 100%;
+		height: auto;
+		background-repeat: no-repeat;
+	}
+
+	.bg-section__wrapper{
+		height: 402px;
+	}
+
+	.bg-section__text {
+		font-size: 60px;
+		line-height: 120%;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 321px) {
+	.bg-section {
+		width: 100%;
+		height: auto;
+		background-repeat: no-repeat;
+	}
+
+	.bg-section__wrapper{
+		height: 302px;
+	}
+
+	.bg-section__text {
+		font-size: 50px;
+		line-height: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.bg-section {
+		width: 100%;
+		height: auto;
+		background-repeat: no-repeat;
+	}
+	
+	.bg-section__wrapper{
+		height: 168px;
+	}
+
+	.bg-section__text {
+		font-size: 30px;
+		line-height: 120%;
+	}
+}

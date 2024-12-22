@@ -1,0 +1,57 @@
+.room-description {
+	padding: 100px 0 50px;
+}
+
+.room-description__wrapper {
+	width: 100%;
+	padding: 0 90px;
+}
+
+.room-description__text {
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: 700;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.room-description {
+		padding: 70px 0 35px;
+	}
+
+	.room-description__wrapper {
+		padding: 0 52px;
+	}
+
+	.room-description__text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.room-description {
+		padding: 60px 0 30px;
+	}
+	
+	.room-description__wrapper {
+		padding: 0;
+	}
+
+	.room-description__text {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.room-description {
+		padding: 30px 0 15px;
+	}
+
+	.room-description__wrapper {
+		padding: 0;
+	}
+
+	.room-description__text {
+		font-size: 16px;
+	}
+}

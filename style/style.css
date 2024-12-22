@@ -1,12 +1,25 @@
-@import url(var.css);
-@import url(main.css);
-@import url(faq.css);
-@import url(header.css);
-@import url(game_over.css);
-@import url(entertainment.css);
-@import url(reserv.css);
-@import url(halls.css);
-@import url(about_us.css);
-@import url(footer.css);
-@import url(comments.css);
-@import url(animation.css);
+@import 'var.css';
+@import 'normalize.css';
+@import 'main.css';
+@import 'header.css';
+@import 'navigation.css';
+@import 'game-over.css';
+@import 'section.css';
+@import 'content.css';
+@import 'title.css';
+@import 'halls.css';
+@import 'about.css';
+@import 'citate.css';
+@import 'creator.css';
+@import 'footer.css';
+@import 'faq.css';
+@import 'reviews.css';
+@import 'description.css';
+@import 'reserve.css';
+@import 'back.css';
+@import 'bg-section.css';
+@import 'room-description.css';
+@import 'room-content.css';
+@import 'other-room.css';
+
+
