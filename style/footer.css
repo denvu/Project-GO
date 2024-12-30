@@ -9,10 +9,30 @@ footer {
   font-style: normal;
 }
 
+.contacts__wrapper {
+	margin-bottom: 145px;;
+}
+
 .contacts__address {
   display: inline-flex;
   align-items: center;
   margin-bottom: 50px;
+}
+
+.contacts__tel, .contacts__email {
+	display: flex;
+	align-items: center;
+}
+
+.contacts__service {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.contacts__email-address:hover, .contacts__tel-number:hover {
+	color: #EADEED;;
+	transition-duration: 0.8s;
 }
 
 .contacts__svg {
@@ -52,7 +72,7 @@ footer {
   height: 50px;
   border: 1px solid var(--pink-color);
   border-radius: 0%;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
 }
 
 .contacts__link:active svg path {
