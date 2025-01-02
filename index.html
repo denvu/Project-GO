@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="../img/icon.svg" />
     <link rel="icon" type="image/png" href="../img/logo.png" />
     <link rel="stylesheet" href="style/style.css" />
 
-	<title>Project-GO</title>   
+    <title>Project-GO</title>
   </head>
   <body>
     <header class="header">
@@ -370,6 +370,7 @@
                         <input
                           class="reserve-time__input"
                           name="date"
+                          type="text"
                           id="date"
                           placeholder="Дата"
                         />
@@ -391,6 +392,7 @@
                         <input
                           class="reserve-time__input"
                           name="time"
+                          type="text"
                           placeholder="Время"
                         />
                         <svg
@@ -417,6 +419,7 @@
                         <input
                           class="reserve-time__input reserve-time__count-input"
                           name="number"
+                          type="number"
                           placeholder="Сколько человек"
                         />
                         <svg
@@ -488,7 +491,7 @@
                       <input
                         class="reserve-time__input reserve-time__email-input"
                         type="email"
-                        name="number"
+                        name="email"
                       />
                     </fieldset>
                   </fieldset>
@@ -510,13 +513,7 @@
             <h2 class="title about__title">О нас</h2>
             <div class="about__info">
               <div class="about__photo">
-                <div class="about__img about__img_vr"></div>
-                <div class="about__img about__img_solt-machine"></div>
-                <div class="about__img about__img_computer"></div>
-                <div class="about__img about__img_game-boy"></div>
-                <div class="about__img about__img_ps"></div>
-                <div class="about__img about__img_karaoke"></div>
-                <div class="about__img about__img_vr-men"></div>
+                <img class="about__img" src="img/about_photos.jpg" alt="Images">
               </div>
               <div class="about__text">
                 <div class="content about-content">
@@ -560,75 +557,68 @@
         <div class="container">
           <div class="content reviews-content">
             <h2 class="title reviews__title">Отзывы посетилелей</h2>
-            <div class="reviews__wrapper">
-              <div class="reviews__inner">
-                <div class="reviews__inner-image">
+            <ul class="reviews__wrapper">
+              <li class="reviews__inner">
+                <fieldset class="reviews__inner-image">
                   <div class="reviews__inner-img reviews__inner-img_maks"></div>
-                  <p class="reviews__inner-name">Макс Самойлов</p>
-                </div>
+                  <figcaption class="reviews__inner-name">Макс Самойлов</figcaption>
+                </fieldset>
                 <p class="reviews__inner-text">
                   Отмечали здесь день рождения с компанией друзей, все было
                   очень круто! VR очки это просто бомба, никогда еще я не был в
                   таком полном игровом погружении.Серивис на высоте!
                 </p>
-              </div>
-              <div class="reviews__inner">
-                <div class="reviews__inner-image">
-                  <div
-                    class="reviews__inner-img reviews__inner-img_oksana"
-                  ></div>
-                  <p class="reviews__inner-name">Оксана Григорьева</p>
-                </div>
+              </li>
+              <li class="reviews__inner">
+                <fieldset class="reviews__inner-image">
+                  <div class="reviews__inner-img reviews__inner-img_oksana"></div>
+                  <figcaption class="reviews__inner-name">Оксана Григорьева</figcaption>
+                </fieldset>
                 <p class="reviews__inner-text">
                   Были в комнате дикий запад, пели в караоке под Шакиру,
                   отличный получился корпоратив! У нас в городе больше нет
                   подобных заведений.
                 </p>
-              </div>
-              <div class="reviews__inner">
-                <div class="reviews__inner-image">
-                  <div
-                    class="reviews__inner-img reviews__inner-img_nikita"
-                  ></div>
-                  <p class="reviews__inner-name">Никита Ященко</p>
-                </div>
+              </li>
+              <li class="reviews__inner">
+                <fieldset class="reviews__inner-image">
+                  <div class="reviews__inner-img reviews__inner-img_nikita"></div>
+                  <figcaption class="reviews__inner-name">Никита Ященко</а>
+                </fieldset>
                 <p class="reviews__inner-text">
                   Немного подвисала игра в vr очках, а так все норм. Кру тое
                   оформление комнаты в стиле звездных воин, попал в атмосферу
                   космоса.
                 </p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="section questions" id="questions">
         <div class="container">
-          <div class="content">
-            <h2 class="title questions-content__title">Частые вопросы</h2>
-            <div class="questions__items">
-              <div class="questions__content questions__content_purple">
-                <p class="questions__text">
-                  Можно ли забронировать комнату онлайн?
-                </p>
-              </div>
-              <div class="questions__content questions__content_white">
-                <p class="questions__text">
-                  Могут ли мне вернуть деньги за бронь?
-                </p>
-              </div>
-
-              <div class="questions__content questions__content_purple">
-                <p class="questions__text">Какая комната самая популярная?</p>
-              </div>
-              <div class="questions__content questions__content_white">
-                <p class="questions__text">Как получить VIP карту?</p>
-              </div>
-              <div class="questions__content questions__content_purple">
-                <p class="questions__text">Какая комната самая популярная?</p>
-              </div>
-            </div>
-          </div>
+          <h2 class="title questions-content__title">Частые вопросы</h2>
+          <ul class="questions__items">
+            <li class="questions__content questions__content_purple">
+              <p class="questions__text">
+                Можно ли забронировать комнату онлайн?
+              </p>
+            </li>
+            <li class="questions__content questions__content_white">
+              <p class="questions__text">
+                Могут ли мне вернуть деньги за бронь?
+              </p>
+            </li>
+            <li class="questions__content questions__content_purple">
+              <p class="questions__text">Какая комната самая популярная?</p>
+            </li>
+            <li class="questions__content questions__content_white">
+              <p class="questions__text">Как получить VIP карту?</p>
+            </li>
+            <li class="questions__content questions__content_purple">
+              <p class="questions__text">Какая комната самая популярная?</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -685,7 +675,9 @@
                       />
                     </svg>
 
-                    <a class="contacts__tel-number" href="tel:+79509302893">8(950)930-28-93</a>
+                    <a class="contacts__tel-number" href="tel:+79509302893"
+                      >8(950)930-28-93</a
+                    >
                   </div>
                   <div class="contacts__email">
                     <svg
@@ -706,7 +698,11 @@
                       />
                     </svg>
 
-                    <a class="contacts__email-address" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+                    <a
+                      class="contacts__email-address"
+                      href="mailto:GameOver@gmail.com"
+                      >GameOver@gmail.com</a
+                    >
                   </div>
                 </div>
                 <ul class="contacts__social">
@@ -715,7 +711,6 @@
                       class="contacts__link contacts__link_vk"
                       href="https://vk.com/"
                     >
-                      <div class="icon__container">
                         <svg
                           width="50"
                           height="50"
@@ -728,7 +723,6 @@
                             fill="white"
                           />
                         </svg>
-                      </div>
                     </a>
                   </li>
                   <li>
@@ -819,10 +813,10 @@
         <div class="designer">
           <div class="container">
             <div class="designer__wrapper">
-              <div class="designer__text">© Game Over, 2022</div>
+              <p class="designer__text">© Game Over, 2022</p>
               <div class="designer__info">
-                <div class="designer__name">Design by Anastasia Ilina</div>
-                <div class="designer__email">ilina9825@gmail.com</div>
+                <p class="designer__name">Design by Anastasia Ilina</p>
+                <p class="designer__email">ilina9825@gmail.com</p>
               </div>
             </div>
           </div>

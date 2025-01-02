@@ -82,8 +82,13 @@
     padding: 7px 10px;
   }
 
-	.questions__icon {
-		width: 30px;
+  .questions__icon {
+    width: 30px;
 		height: 30px;
-	}
+  }
+  
+  .questions__content::after {
+    width: 30px;
+		height: 30px;
+  }
 }

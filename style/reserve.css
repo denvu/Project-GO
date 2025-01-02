@@ -46,6 +46,7 @@
 	padding: 7px 15px;
 	color: var(--black, #000);
 	background-color: var(--color-white);
+	border: 3px solid var(--color-white, #FFF);
 	text-align: center;
 	font-size: 30px;
 	font-weight: 700;
@@ -54,35 +55,29 @@
 	border-radius: 8px;
 	transition-property: all;
 	transition-duration: 0.2s;
-	border: none;
 }
 
 .reserve-hall__radio-btn .reserve-btn:checked + 
 .reserve-hall__radio-btn-label {
-	border: 3px solid var(--color-white, #FFF);
 	background-color: var(--violet-color, #6C0287);
 	color: var(--color-white, #FFF);
-	padding: 4px 12px;
 }
 
 .reserve-hall__radio-btn-label:hover {
-	border: 3px solid var(--light-purple, #640AA3);
+	border-color: var(--light-purple, #640AA3);
 	background: var(--grey, #EDDEED);
-	padding: 4px 12px;
 }
 
 .reserve-btn:focus + .reserve-hall__radio-btn-label {
 	color: var(--black, #000);
-	border: 3px solid var(--light-purple, #640AA3);
+	border-color: var(--light-purple, #640AA3);
 	background: var(--color-white, #FFF);
-	padding: 4px 12px;
 }
 
 .reserve-hall__radio-btn-label:active {
-	border: 3px solid var(--color-white, #FFF);
+	border-color: var(--color-white, #FFF);
 	background-color: var(--violet-color, #6C0287);
 	color: var(--color-white, #FFF);
-	padding: 4px 12px;
 }
 
 .reserve-btn:checked {
@@ -459,7 +454,7 @@
 		max-height: 44px;
 		font-size: 20px;
 		line-height: 24px;
-		padding: 10px 20px;
+		padding: 7px 20px;
 	}
 
 	.reserve-games__wrapper {

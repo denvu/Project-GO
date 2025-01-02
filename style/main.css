@@ -64,6 +64,10 @@ iframe {
 	border: none;
 }
 
+address {
+	font-style: normal;
+}
+
 /*
 Доступно скрываю элементы
 */
